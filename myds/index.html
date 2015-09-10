@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+			<meta charset="utf-8" />
+			<title>UCAV仿真平台</title>
+			<meta name="keywords" content="emulation" />
+			<meta name="description" content="emulantion platform" />
+			<link rel="shortcut icon" href="" mce_href="" type="image/x-icon">
+			<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/bootstrap-switch.min.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">
+			<link href="css/style.css" rel="stylesheet" />
+			<script src="js/jquery-1.11.0.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/bootstrap-switch.min.js"></script>
+			<script src="js/jquery-ui.js"></script>
+			<script  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCT4GNVJhOIfqHfWbhyOiZVG_k8zkuzz0s&sensor=true&libraries=geometry" type="text/javascript"></script>
+			<script src="js/2d-earth.js" type="text/javascript"></script>
+      <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header>
+          <nav id="top">
+					<div class="btn-group btn-group-lg">
+						<button class="btn btn-default header-button dropdown-toggle" data-toggle="dropdown">
+							文件
+							<span class="caret"></span>
+						</button>
+						<div class="dropdown-menu">
+							<ul class="jquery-ui-menu">
+								<li role="presentation" class="dropdown-header">任务操作</li>
+								<li><a href="#">新建想定</a></li>
+								<li><a href="#">打开想定</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation" class="dropdown-header">模型操作</li>
+								<li><a href="#">模型导入</a></li>
+								<li><a href="#">模型导出</a></li>
+								<li><a href="#">模型编辑</a></li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">历史记录</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">demo.map</a></li>
+										<li><a href="#">new.task</a></li>
+									</ul>
+								  </li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn-group btn-group-lg">
+						<button class="btn btn-default header-button dropdown-toggle" data-toggle="dropdown">
+							地图
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">三维地图</a></li>
+							<li><a href="#">二维地图</a></li>
+						</ul>
+					</div>
+					<div class="btn-group btn-group-lg">
+						<button class="btn btn-default header-button dropdown-toggle" data-toggle="dropdown">
+							仿真
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">路径仿真</a></li>
+							<li><a href="#">3D飞行</a></li>
+						</ul>
+					</div>
+					<div class="btn-group btn-group-lg">
+						<button class="btn btn-default header-button dropdown-toggle" data-toggle="dropdown">
+							决策评估
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">航经规划</a></li>
+							<li><a href="#">威胁评估（Bayes算法）</a></li>
+						</ul>
+					</div>
+					<div class="btn-group btn-group-lg">
+						<button class="btn btn-default header-button dropdown-toggle" data-toggle="dropdown">
+							帮助
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">快捷键设置</a></li>
+							<li><a href="#">使用及维护指南</a></li>
+						</ul>
+					</div>
+            </nav>
+        </header>
+        <div id="main-wrapper">
+            <div id="left-panel">
+							<div id="main-icon" clicked="false"><span class="glyphicon glyphicon-th"></span></div>
+              <ul id="left-accordion">
+                <li class="left-panel-button">
+									<h3>绘图工具</h3>
+									<div>
+										<p id="tools">
+											<span class="glyphicon glyphicon-pencil menu-icon"></span>
+											<span class="glyphicon glyphicon-screenshot menu-icon"></span>
+											<span class="glyphicon glyphicon-fullscreen menu-icon"></span>
+											<span class="glyphicon glyphicon glyphicon-move menu-icon"></span>
+											<span class="glyphicon glyphicon-search menu-icon"></span>
+											<span class="glyphicon glyphicon-bookmark menu-icon"></span>
+											<span class="glyphicon glyphicon-pushpin menu-icon"></span>
+											<span class="glyphicon glyphicon-resize-full menu-icon"></span>
+											<span class="glyphicon glyphicon-resize-small menu-icon"></span>
+											<span class="glyphicon glyphicon-screenshot menu-icon"></span>
+										</p>
+									</div>
+								</li>
+								<li class="left-panel-button">
+									<h3>军标</h3>
+										<div><p class="menu-text">we are testing the content of accordion,the text has to be very long, that's why I'm texting so much here.</p></div>
+								</li>
+								<li class="left-panel-button">
+									<h3>线型</h3>
+									<div><p class="menu-text">we are testing the content of accordion,the text has to be very long, that's why I'm texting so much here.</p></div>
+								</li>
+								<li class="left-panel-button">
+									<h3>模型库</h3>
+									<div><p class="menu-text">we are testing the content of accordion,the text has to be very long, that's why I'm texting so much here.</p></div>
+								</li>
+              </ul>
+            </div>
+            <div id="moving-content">
+							<div id="map2D"></div>
+            </div>
+        </div>
+    </body>

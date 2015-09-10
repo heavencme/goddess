@@ -1,0 +1,83 @@
+<div id="hidden-panel">
+                <span id="hidden-panel-title">Sub Menu</span>
+                <button id="hidden-panel-close" style="float:right;width:20px;height:20px">X</button>
+                <ul>
+                    <li class="hidden-panel-button"><a>Sub1</a></li>
+                    <li class="hidden-panel-button"><a>Sub2</a></li>
+                    <li class="hidden-panel-button"><a>Sub3</a></li>
+                    <li class="hidden-panel-button"><a>Sub4</a></li>
+                    <li class="hidden-panel-button"><a>Sub5</a></li>
+                </ul>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td ></td>
+                            <td colspan="2" ></td>
+                            <td rowspan="4" ></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="q-num"colspan="2" style="cursor:pointer;"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+/**generate the sub menu of right-panel**/
+var td = doc.getElementsByTagName("td");
+var hiddenPanel = doc.getElementById("hidden-panel");
+
+for(var n = 0; n < td.length; n++ ){
+    td[n].innerHTML="<button>x"+n+"x</button>";
+}
+
+tar = doc.getElementsByClassName("right-panel-button");
+for (var i = 0; i < tar.length; i++) {
+	tar[i].addEventListener("click", handler);
+}
+
+function handler(e){
+    src = e.srcElement;
+    e.preventDefault();
+
+    doc.getElementById("hidden-panel-title").innerHTML = "Sub Menu of " + src.innerHTML;
+    src.width = "252px";
+    src.height = "500px";
+
+    $('#hidden-panel').animate(
+	{top:( $(src).offset().top )},
+	500
+    );
+
+    hiddenPanel.style.display = "block";
+}
+
+doc.getElementById("hidden-panel-close").addEventListener("click", close);
+
+function close(){
+    hiddenPanel.style.display = "none";
+}

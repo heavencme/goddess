@@ -1,0 +1,106 @@
+body {
+	background: #f1f1f1;
+	min-width: 0;
+	color: #444;
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+	line-height: 1.4em;
+}
+
+#login {
+	width: 320px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+
+.login h1 {
+	text-align: center;
+}
+
+.login form {
+	margin-top: 20px;
+	margin-left: 0;
+	padding: 26px 24px 46px;
+	font-weight: 400;
+	overflow: hidden;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+	box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+#login form p {
+	margin-bottom: 0;
+}
+
+.login form .input, .login form input[type=checkbox], .login input[type=text] {
+	background: #fbfbfb;
+}
+
+.login form .input, .login input[type=text] {
+	font-size: 24px;
+	line-height: 1;
+	width: 100%;
+	padding: 3px;
+	margin: 2px 6px 16px 0;
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+select,
+textarea {
+	border: 1px solid #ddd;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	background-color: #fff;
+	color: #333;
+	-webkit-transition: .05s border-color ease-in-out;
+	transition: .05s border-color ease-in-out;
+}
+
+input[type=text], input[type=url], select, textarea {
+	border: 1px solid #ddd;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	background-color: #fff;
+	color: #333;
+	-webkit-transition: .05s border-color ease-in-out;
+	transition: .05s border-color ease-in-out;
+}
+
+input[type=checkbox]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=radio]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=url]:focus,
+select:focus,
+textarea:focus {
+	border-color: #5b9dd9;
+	-webkit-box-shadow: 0 0 2px rgba(30,140,190,.8);
+	box-shadow: 0 0 2px rgba(30,140,190,.8);
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=text],
+input[type=url],
+select,
+textarea {
+	outline: 0;
+}
+
+#loginform p.submit{
+	position: relative;
+	right: -190px;
+	top: -36px;
+}

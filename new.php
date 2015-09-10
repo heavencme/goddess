@@ -1,0 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION['rrtoken']['access_token']))
+    {
+	include_once'all.php';
+    }
+    else
+    {
+	include_once'wall.php';
+    }
+?>

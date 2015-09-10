@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8" />
+	<title>UCAV仿真平台</title>
+	<meta name="keywords" content="emulation" />
+	<meta name="description" content="emulantion platform" />
+	<link rel="shortcut icon" href="" mce_href="" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-switch.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+		<div id="login" class="login">
+			<h1>UCAV仿真平台</h1>
+			<form name="loginform" id="loginform" action="login_auth" method="post">
+				<p>
+					<label for="user_login">用户名<br>
+					<input type="text" name="log" id="user_login" class="input" value="" size="20"></label>
+				</p>
+				<p>
+					<label for="user_pass">密码<br>
+					<input type="password" name="pwd" id="user_pass" class="input" value="" size="20"></label>
+				</p>
+				<p class="forgetmenot">
+					<label for="rememberme">
+						<input name="rememberme" type="checkbox" id="rememberme" value="forever"> 记住我的登录信息
+					</label>
+				</p>
+				<p class="submit">
+					<input type="submit" name="login-submit" id="login-submit" class="btn btn-lg btn-primary btn-shadow bs3-link" value="登录">
+					<input type="hidden" name="redirect-to" value="redirect">
+					<input type="hidden" name="testcookie" value="1">
+				</p>
+			</form>
+			<p id="nav">
+				<a href="localhost:3000/" title="找回密码">忘记密码？</a>
+			</p>
+	</div>
+</body>
+</html>
+

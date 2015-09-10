@@ -1,0 +1,79 @@
+@font-face {  /*my wbfonts*/
+  font-family: 'icons';
+  src: url('fonts/wbfonts.eot');
+  src: url('fonts/wbfonts.eot?#iefix') format('embedded-opentype'),
+       url('fonts/wbfonts.woff') format('woff'),
+       url('fonts/wbfonts.ttf') format('truetype'),
+       url('fonts/wbfonts.svg#icons') format('svg');
+  font-weight: normal; font-style: normal;
+}
+
+.user{
+  width:200px;
+  height: 70px;
+  margin-top: 15px;
+}
+
+.login-btn{
+	height: 150px;
+	width: 271px;
+	margin: 20px auto;
+}
+.login_button{
+	margin-right: 10px;
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	width: 50px;
+	background: #FFF5F5;
+	border-radius: 25px;
+	margin-top: 15px;
+	font-family: 'icons';
+	font-size: 42px;
+}
+
+.login_button:hover{
+	border: 2px #000;
+	background: #F3F2F7;
+	box-shadow: 4px 4px 5px #634C4C;
+}
+
+.login_button a{
+	color: #694747;
+}
+
+#wb-btn a:hover{
+	color: #f00;
+	
+}
+
+#rr-btn a:hover{
+	color: #00f;
+}
+
+.userlogo{
+  float: left;
+    width:50px;
+    height: 50px;
+  -moz-box-shadow:0px 0px 5px #000 inset;
+  -webkit-box-shadow:0px 0px 5px #000 inset;
+  box-shadow:0px 0px 5px #000 inset;
+}
+
+.userinfo{
+  font-family: serif;
+  float: left;
+  width: 145px;
+  height: 47px;
+  font-size:11px;
+  color:#000;
+  margin:0px 0px 0px 0px;
+  display:block;
+  text-shadow:1px 1px 1px #BDDCEF;
+  padding-top:3px;
+  -moz-box-shadow:0px 0px 5px #000 inset;
+  -webkit-box-shadow:0px 0px 5px #000 inset;
+  box-shadow:0px 0px 5px #000 inset;
+  
+  
+}

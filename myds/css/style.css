@@ -1,0 +1,168 @@
+#top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 22%;
+	width: 100%;
+	height: 57px;
+
+	background: #3f4d57;
+}
+
+#top ul {
+	
+}
+
+.header-button {
+	
+}
+
+.header-button a {
+	
+}
+
+.header-button a:hover,
+.header-button a:focus {
+ 
+}
+
+.jquery-ui-menu {
+    border: none;
+}
+
+.main-wrapper {
+	width: 100%;
+	min-height: 800px;
+
+	background: #d2d3d4;
+}
+
+#main-icon {
+    position: fixed;
+    top: 2px;
+    left: 8px;
+    color: #3f4d57;
+    font-size: 39px;
+}
+
+#main-icon :hover ,
+#main-icon :focus {
+	color: #00f;
+}
+
+#left-panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	width: 20%;
+	height: 100%;
+    overflow: hidden;
+		
+	background-color: #e6e7e9;
+	box-shadow: 3px 0 3px rgba(0,0,0,.18),-1px 0 0 rgba(255,255,255,.4) inset;
+	border-right: 1px solid #BBB;
+}
+
+#left-panel ul {
+	position: relative;
+	top: 60px;
+
+	/*remove the default paddind & margin of ul> li*/
+	padding: 0;
+	margin: 0;
+}
+
+.left-panel-button {
+	width: 100%;
+	list-style: none;
+}
+
+.left-panel-button a {
+	margin-left: 0;
+
+	display: block;
+	border-top: 1px solid #BBB;
+
+	text-align: center;
+}
+
+
+.left-panel-button  :focus {
+	background: #d2d3d4;
+	box-shadow: 0 0 6px rgba(0,0,0,.4) inset;
+}
+
+.menu-text {
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.menu-icon {
+  font-size: 44px;
+  overflow: hidden;
+}
+
+.menu-icon:hover {
+	color: #02f;
+}
+
+#hidden-panel {
+	position: absolute;
+	top:60px;
+	left: 63px;
+	z-index: 2;
+
+	width: 252px;
+	height: 500px;
+
+	background-color: #e6e7e9;
+	box-shadow: 3px 0 3px rgba(0,0,0,.18),-1px 0 0 rgba(255,255,255,.4) inset;
+	border-right: 1px solid #BBB;
+}
+
+#hidden-panel ul {
+	padding: 0;
+	margin: 0;
+}
+
+#hidden-panel ul li {
+	list-style: none;
+}
+
+.hidden-panel-button a{
+	display: block;
+	width: 100%;
+	height: 20px;
+	border-top: 1px solid #BBB;
+
+	text-align: center;	
+}
+
+#hidden-panel span {
+	clear: left;
+
+	width: auto;
+
+	font-family: proxima-nova,sans-serif;
+	font-size: 25px;
+	color: #222;
+	font-weight: 600;
+}
+
+#hidden-panel table tbody tr td {
+	border: 1px solid #000;
+}
+#moving-content {
+	
+}
+#map2D{
+    width: 100%;
+    height: 100%;
+    background-color: #d2d3d4;
+    position: absolute;
+    overflow: hidden;
+    -webkit-transform: translateZ(0px);
+    top: 57px;
+}

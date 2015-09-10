@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button { margin:10px; }
+        div { color:blue; font-weight:bold; }
+        span { color:red; }
+        
+         .loading {
+             background: url("http://img02.taobaocdn.com/tps/i2/T16WJqXaXeXXXXXXXX-32-32.gif") no-repeat scroll 50% 50% transparent;
+             width: 100px;
+             height: 100px !important;
+             margin: 20px;
+         }
+         
+    </style>
+
+    <script src="http://a.tbcdn.cn/s/kissy/1.3.0/seed.js" data-config="{combine:true}"></script>
+</head>
+<body>
+    <button id='jsonp'>get pics from flickr</button>
+    <div id="photo-list"></div>
+<script>
+    KISSY.use('core',function (S) {
+        var $ = S.all,
+            photoList = $('#photo-list');
+        $("#jsonp").attr("disabled",false);
+        $("#jsonp").on("click", function () {
+            $(this).attr("disabled",true);
+            photoList.addClass('loading');
+
+            S.IO({
+                dataType:'jsonp',
+                url:"getuaccess.php", 
+                data:{
+                    'access_token':'2.00_8bGjBBjGOxD309e268b5c03wlrl'
+                },
+                //jsonp:"jsoncallback",/**此处莫名奇妙**/    
+                success:function (data) {
+                    alert("go");
+        
+                    
+                }
+            });
+    
+        });
+    });    
+</script>
+
+</body>
+</html>
